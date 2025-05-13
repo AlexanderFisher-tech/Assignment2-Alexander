@@ -1,0 +1,34 @@
+<%- include("templates/header") %>
+
+<div class="container mt-5">
+  <div class="text-center mb-4">
+    <h1 class="display-6 text-danger">/admin</h1>
+    <p class="text-muted fst-italic">This interface was not meant to be seen.</p>
+    <p class="text-warning small">Every change you make is permanent. Every promotion a recursion. Every demotion a forgetting.</p>
+  </div>
+
+  <div class="table-responsive rounded border shadow">
+    <table class="table table-dark table-hover align-middle mb-0">
+      <thead>
+        <tr class="text-uppercase text-secondary small">
+          <th>Username</th>
+          <th>User Type</th>
+          <th>Fate (promote or demote)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(user => { %>
+          <%- include("templates/user", { user }) %>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="/" class="text-decoration-none text-secondary small">
+      Exit quietly
+    </a>
+  </div>
+</div>
+
+<%- include("templates/footer") %>

@@ -1,0 +1,33 @@
+<%- include("templates/header") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Log In</h2>
+
+          <form action="/loggingin" method="POST">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input name="username" type="text" class="form-control" placeholder="Enter username" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input name="password" type="password" class="form-control" placeholder="Enter password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Log In</button>
+          </form>
+
+          <p class="text-center text-muted mt-3 small">
+            Don’t have an account? <a href="/signup">Sign up here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("templates/footer") %>
