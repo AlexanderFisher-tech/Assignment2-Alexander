@@ -78,9 +78,9 @@ app.get('/logout', (req, res) => {
 
 app.get('/members', sessionValidation, (req, res) => {
   const images = [
-    "/public/image1.webp",
-    "/public/image2.jpg",
-    "/public/image3.webp",
+    "/image1.webp",
+    "/image2.jpg",
+    "/image3.webp",
   ];
   res.render("members", { username: req.session.username, images });
 });
