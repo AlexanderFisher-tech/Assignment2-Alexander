@@ -2,13 +2,13 @@
 
 <div class="container mt-5">
   <h2 class="text-center mb-4">Welcome, <%= username %>.</h2>
-  <p class="text-center text-muted">The cats return again. They always do. Patterns persist.</p>
+  <p class="text-center text-muted">The OuterWilds return again. They always do. Patterns persist.</p>
 
   <div class="row">
     <% images.forEach((image, index) => { %>
       <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
         <div class="card shadow-sm" style="width: 100%; max-width: 250px;">
-          <img src="<%= image %>" class="card-img-top img-fluid" alt="Recursive Cat <%= index + 1 %>">
+          <img src="<%= image %>" class="card-img-top img-fluid" alt="Outerwilds <%= index + 1 %>">
           <div class="card-body text-center">
             <small class="text-muted">Image <%= index + 1 %> of <%= images.length %></small>
           </div>
