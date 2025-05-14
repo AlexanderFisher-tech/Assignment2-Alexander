@@ -6,14 +6,20 @@
 
   <div class="row">
     <% images.forEach((image, index) => { %>
-      <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
-        <div class="card shadow-sm" style="width: 100%; max-width: 250px;">
-          <img src="<%= image %>" class="card-img-top img-fluid" alt="Outerwilds <%= index + 1 %>">
-          <div class="card-body text-center">
-            <small class="text-muted"> Image <%= index + 1 %> of <%= images.length %></small>
-          </div>
+    <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+      <div class="card shadow-sm" style="width: 100%; max-width: 250px">
+        <img
+          src="<%= image %>"
+          class="card-img-top img-fluid"
+          alt="Outerwilds <%= index + 1 %>"
+        />
+        <div class="card-body text-center">
+          <small class="text-muted">
+            Image <%= index + 1 %> of <%= images.length %></small
+          >
         </div>
       </div>
+    </div>
     <% }) %>
   </div>
 
@@ -23,5 +29,3 @@
 </div>
 
 <%- include("templates/footer") %>
-
-

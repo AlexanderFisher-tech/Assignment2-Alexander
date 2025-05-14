@@ -3,8 +3,13 @@
 <div class="container mt-5">
   <div class="text-center mb-4">
     <h1 class="display-6 text-danger">/admin</h1>
-    <p class="text-muted fst-italic">This interface was not meant to be seen.</p>
-    <p class="text-warning small">Every change you make is permanent. Every promotion a recursion. Every demotion a forgetting.</p>
+    <p class="text-muted fst-italic">
+      This interface was not meant to be seen.
+    </p>
+    <p class="text-warning small">
+      Every change you make is permanent. Every promotion a recursion. Every
+      demotion a forgetting.
+    </p>
   </div>
 
   <div class="table-responsive rounded border shadow">
@@ -17,8 +22,7 @@
         </tr>
       </thead>
       <tbody>
-        <% users.forEach(user => { %>
-          <%- include("templates/user", { user }) %>
+        <% users.forEach(user => { %> <%- include("templates/user", { user }) %>
         <% }) %>
       </tbody>
     </table>
